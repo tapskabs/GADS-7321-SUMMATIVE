@@ -5,74 +5,91 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Assign in Inspector")]
-    public DialogueLine startingDialogue;  // Drag your first SO here
-    public Image portraitImage;            // You can use RawImage too if preferred
+    [Header("Inspector References")]
+    public DialogueSequence startingSequence;
+    public Image portraitImage;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Button nextButton;
 
-    private DialogueLine currentLine;
+    private DialogueSequence currentSequence;
+    private int entryIndex;
 
-    private void Start()
+    void Start()
     {
-        if (startingDialogue != null)
+        if (startingSequence != null)
         {
-            StartDialogue(startingDialogue);
+            StartSequence(startingSequence);
         }
 
         nextButton.onClick.AddListener(HandleNext);
     }
 
-    public void StartDialogue(DialogueLine dialogue)
+    void StartSequence(DialogueSequence sequence)
     {
-        currentLine = dialogue;
+        currentSequence = sequence;
+        entryIndex = 0;
+        DisplayCurrentEntry();
+    }
 
-        nameText.text = dialogue.characterName;
-        dialogueText.text = dialogue.dialogueText;
-
-        if (portraitImage != null && dialogue.characterPortrait != null)
+    void DisplayCurrentEntry()
+    {
+        if (entryIndex < currentSequence.dialogueEntries.Length)
         {
-            portraitImage.sprite = dialogue.characterPortrait;
+            var entry = currentSequence.dialogueEntries[entryIndex];
+            nameText.text = entry.characterName;
+            dialogueText.text = entry.dialogueText;
+
+            if (portraitImage != null && entry.characterPortrait != null)
+            {
+                portraitImage.sprite = entry.characterPortrait;
+            }
         }
     }
 
-    private void HandleNext()
+    void HandleNext()
     {
-        if (currentLine == null) return;
-
-        float roll = Random.value;
-        bool isSuccess = roll <= currentLine.successProbability;
-
-        if (isSuccess)
+        if (entryIndex < currentSequence.dialogueEntries.Length - 1)
         {
-            if (!string.IsNullOrEmpty(currentLine.successSceneName))
-            {
-                SceneManager.LoadScene(currentLine.successSceneName);
-                return;
-            }
-            else if (currentLine.successNextLine != null)
-            {
-                StartDialogue(currentLine.successNextLine);
-                return;
-            }
+            entryIndex++;
+            DisplayCurrentEntry();
         }
         else
         {
-            if (!string.IsNullOrEmpty(currentLine.failSceneName))
-            {
-                SceneManager.LoadScene(currentLine.failSceneName);
-                return;
-            }
-            else if (currentLine.failNextLine != null)
-            {
-                StartDialogue(currentLine.failNextLine);
-                return;
-            }
-        }
+            // Dialogue finished, now handle probabilistic branching
+            float roll = Random.value;
+            bool success = roll <= currentSequence.successProbability;
 
-        // If no outcome, just disable button or do nothing
-        nextButton.interactable = false;
-        dialogueText.text += "\n\n[End of Dialogue]";
+            if (success)
+            {
+                if (!string.IsNullOrEmpty(currentSequence.successSceneName))
+                {
+                    SceneManager.LoadScene(currentSequence.successSceneName);
+                    return;
+                }
+                else if (currentSequence.successSequence != null)
+                {
+                    StartSequence(currentSequence.successSequence);
+                    return;
+                }
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(currentSequence.failSceneName))
+                {
+                    SceneManager.LoadScene(currentSequence.failSceneName);
+                    return;
+                }
+                else if (currentSequence.failSequence != null)
+                {
+                    StartSequence(currentSequence.failSequence);
+                    return;
+                }
+            }
+
+            // If no outcome defined
+            dialogueText.text += "\n\n[End of Dialogue]";
+            nextButton.interactable = false;
+        }
     }
 }
