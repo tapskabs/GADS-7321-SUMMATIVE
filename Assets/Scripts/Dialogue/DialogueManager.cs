@@ -1,58 +1,78 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Image portraitImage;
+    [Header("Assign in Inspector")]
+    public DialogueLine startingDialogue;  // Drag your first SO here
+    public Image portraitImage;            // You can use RawImage too if preferred
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public Transform choicesContainer;
-    public GameObject choiceButtonPrefab;
+    public Button nextButton;
 
     private DialogueLine currentLine;
 
-    public void StartDialogue(DialogueLine startingLine)
+    private void Start()
     {
-        currentLine = startingLine;
-        DisplayLine(currentLine);
+        if (startingDialogue != null)
+        {
+            StartDialogue(startingDialogue);
+        }
+
+        nextButton.onClick.AddListener(HandleNext);
     }
 
-    void DisplayLine(DialogueLine line)
+    public void StartDialogue(DialogueLine dialogue)
     {
-        nameText.text = line.characterName;
-        portraitImage.sprite = line.characterPortrait;
-        dialogueText.text = line.dialogueText;
+        currentLine = dialogue;
 
-        foreach (Transform child in choicesContainer) Destroy(child.gameObject);
+        nameText.text = dialogue.characterName;
+        dialogueText.text = dialogue.dialogueText;
 
-        foreach (var choice in line.choices)
+        if (portraitImage != null && dialogue.characterPortrait != null)
         {
-            var button = Instantiate(choiceButtonPrefab, choicesContainer);
-            button.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
-            button.GetComponent<Button>().onClick.AddListener(() => OnChoiceSelected(choice));
+            portraitImage.sprite = dialogue.characterPortrait;
         }
     }
 
-    void OnChoiceSelected(DialogueChoice choice)
+    private void HandleNext()
     {
-        float roll = Random.value;
-        bool success = roll <= choice.successProbability;
+        if (currentLine == null) return;
 
-        if (success)
+        float roll = Random.value;
+        bool isSuccess = roll <= currentLine.successProbability;
+
+        if (isSuccess)
         {
-            if (!string.IsNullOrEmpty(choice.successSceneName))
-                SceneManager.LoadScene(choice.successSceneName);
-            else if (choice.successOutcome != null)
-                DisplayLine(choice.successOutcome);
+            if (!string.IsNullOrEmpty(currentLine.successSceneName))
+            {
+                SceneManager.LoadScene(currentLine.successSceneName);
+                return;
+            }
+            else if (currentLine.successNextLine != null)
+            {
+                StartDialogue(currentLine.successNextLine);
+                return;
+            }
         }
         else
         {
-            if (!string.IsNullOrEmpty(choice.failSceneName))
-                SceneManager.LoadScene(choice.failSceneName);
-            else if (choice.failOutcome != null)
-                DisplayLine(choice.failOutcome);
+            if (!string.IsNullOrEmpty(currentLine.failSceneName))
+            {
+                SceneManager.LoadScene(currentLine.failSceneName);
+                return;
+            }
+            else if (currentLine.failNextLine != null)
+            {
+                StartDialogue(currentLine.failNextLine);
+                return;
+            }
         }
+
+        // If no outcome, just disable button or do nothing
+        nextButton.interactable = false;
+        dialogueText.text += "\n\n[End of Dialogue]";
     }
 }
