@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: PrimDiag_Start
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: 'Narrator '
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho's childhppd came and went at the flick of a finger. The hardships
+      of life would begin to present itself to Sipho.
+  - characterName: uMama
+    characterPortrait: {fileID: 3654650424230160380, guid: 13a28469f43cb6447b2278093550b579, type: 3}
+    dialogueText: My sweet angel II will be home before you know it.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: It was a lie. She knew it. He hoped it wasn't so. And she turned
+      and left his life. Off to find better work, and better oppurtunities.
+  - characterName: Narrtor
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho would live with his grandmother from now on. A Sharp woman
+      but full of kindness. School would start soon.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Sipho is aging up. Let's see how this has effected his health.
+    choiceA:
+      choiceText: Begin the next Life Stage with Vigor
+      successProbability: 0.71
+      successSequence: {fileID: 11400000, guid: db73aafe204d1f84993eb6f5a2caf840, type: 2}
+      failSequence: {fileID: 11400000, guid: 19ad2bd0446870a42a24a75e9957ebb7, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Begin with caution
+      successProbability: 0.71
+      successSequence: {fileID: 11400000, guid: db73aafe204d1f84993eb6f5a2caf840, type: 2}
+      failSequence: {fileID: 11400000, guid: 19ad2bd0446870a42a24a75e9957ebb7, type: 2}
+      successSceneName: 
+      failSceneName: 

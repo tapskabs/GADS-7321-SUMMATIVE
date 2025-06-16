@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: PassExtraLesson
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: So the crocodile always eats the big number?
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho's lessons are going well and with the smaller class he's
+      able to ask more questions. Most children skip the extra lessons that the school
+      offers since it ends so late.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: The lights go off for the day and Sipho struggles to read in the
+      dim lighting. The principal has left for the day and taken the electricity
+      coupon with him. The School is left with no power.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: When all is said and done, Sipho feels much better.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: The next day, Sipho gets up extra early and makes the long walk
+      to class. On the way he motivates himself.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Maths is fun. I know how to do Maths.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: This test is super easy!. The easiest. I know Maths.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho enters his classroom and writes his exam. And when he gets
+      his results. He's PASSED
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Will Sipho continue his lessons?
+    choiceA:
+      choiceText: Eh. Doens't need more of those.
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: 3477f0e7dfc6b73408ac3361002a2bb1, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Yebo
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: 3477f0e7dfc6b73408ac3361002a2bb1, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

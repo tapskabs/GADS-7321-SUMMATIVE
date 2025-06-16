@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: WalkingToSchool
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho gets up early each day and prepares for a long journey to
+      school. The roads are rough and he arrives sweaty and tired each day.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: When Sipho is at school, the classroom is much too full for him
+      to be able to concentrate.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: It's Mathematics and the questions have Sipho completely stumped.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Sipho needs to ask his teacher for help but theres almost 70
+      students. How will he get her attention?
+    choiceA:
+      choiceText: Get up and yell so she can hear him
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: 80500eb2ae326b444ba558afd212b805, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Talk to the Teacher after Class
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: b3fb570d56442e94eb9c4b7b49b5c969, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

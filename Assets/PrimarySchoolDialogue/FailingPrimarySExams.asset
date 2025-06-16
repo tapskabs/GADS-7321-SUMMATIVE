@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: FailingPrimarySExams
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho is anxious before each exam. Sweat drips down his brows.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: I can do it.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: I can do it.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: He tries desperately and works very hard.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: At the end of year. Sipho is outraged. He's failed.
+  showChoicePanelAtEnd: 0
+  choicePanel:
+    eventDescription: 
+    choiceA:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

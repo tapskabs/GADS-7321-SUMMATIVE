@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: FinalExamsprimary
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Okay, I will put all my notes here and read them extra early in
+      the morning.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho has gotten lots of notes for exams and is feeling ready for
+      anything.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: It was very tiring but Sipho feels very accomplished.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Gogo, I promise I am going to pass all my classes. All of Them
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Gogo Smiles and places her hand on his shoulder.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: You make me so proud umzukulu
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: uGogo Smiles proudly and sends him off on his first day of exams.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Sipho needs to find an approach to his exams.
+    choiceA:
+      choiceText: Wake up extra early to revise
+      successProbability: 0.94
+      successSequence: {fileID: 11400000, guid: 5e46434a3c1a879448a4c11910ed090d, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Stay late to Revise
+      successProbability: 0.94
+      successSequence: {fileID: 11400000, guid: 5e46434a3c1a879448a4c11910ed090d, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

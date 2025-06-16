@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: AgedFine
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Well, look at that. It seems Sipho has aged just fine.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Gogo, the road is too long. It takes me almost an hour to walk
+      to school. My feet have been hurting and I'm too tired at school. Can I take
+      a taxi?
+  - characterName: uGogo
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: The taxi is too expensive to go everyday. I'm sorry my child.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Sipho has seen busses on the road to school with children getting
+      on them. Should he push his grandma about transport?
+    choiceA:
+      choiceText: What about the School Bus?
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: dc723f0b8ee9002409684445c891cba4, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Be Quiet and just get up earlier.
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: e58eabf218251c54c9ba5780f8689f7b, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

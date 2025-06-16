@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: TheWeather
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: With the maths test behind him, Sipho must learn to continue onwards.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: He's entering a new grade today and his excitement builds tremendously.
+      The holidays were hard without the school lunches provided by the school.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: But everything comes crashing down when he gets his textbooks?
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Why are these in english??
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: If school was looking hard. It got harder. English becomes mandatory
+      fromm Grade 4.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Miss, you can't do this!
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: The next day, the rain pours down hard. Lightning flashes through
+      the sky.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Does Sipho still go to School today?
+    choiceA:
+      choiceText: Not on this weather!
+      successProbability: 1
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Yes, he's already so behind.
+      successProbability: 1
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

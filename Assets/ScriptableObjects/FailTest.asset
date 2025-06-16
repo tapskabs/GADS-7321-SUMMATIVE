@@ -16,8 +16,20 @@ MonoBehaviour:
   - characterName: You lost
     characterPortrait: {fileID: 21300000, guid: 9c22439f7b2eadb41b70e5385d667660, type: 3}
     dialogueText: Boooooo
-  successProbability: 0.849
-  successSequence: {fileID: 11400000, guid: 148fb5e2e0ca60243820f981e3810ec2, type: 2}
-  failSequence: {fileID: 11400000}
-  successSceneName: 
-  failSceneName: 
+  showChoicePanelAtEnd: 0
+  choicePanel:
+    eventDescription: 
+    choiceA:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

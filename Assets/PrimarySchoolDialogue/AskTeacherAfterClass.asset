@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: AskTeacherAfterClass
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho sits back and works on the problem throughout class, but
+      still he wracks his brain to no end. the answer alluding him.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Whent the bell rings he goes up to his teacher.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Miss, I really need your help with this question.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho raises ihis book to show her his work. She averts her gaze
+      and speaks.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: You can't help me?
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: No, but it is not her fault. His poor teacher has other classes
+      and won't have any free time today. Maybe tomorrow she can help.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: No, but it is not her fault. His poor teacher has other classes
+      and won't have any free time today but reassures him that there are extra classes
+      for him to take.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Sipho still needs to get ahead in maths so he considers his
+      options. He needs to Ace his next maths test.
+    choiceA:
+      choiceText: 'Study extra hard at home. '
+      successProbability: 0.3
+      successSequence: {fileID: 11400000, guid: 00b036de2c950e44481a8a799368455b, type: 2}
+      failSequence: {fileID: 11400000, guid: 55280538ed87f8d4ea6cba6ec03d7714, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Attend extra classes
+      successProbability: 0.6
+      successSequence: {fileID: 11400000, guid: fb7d9d582239dfd478479116f2665da7, type: 2}
+      failSequence: {fileID: 11400000, guid: 89f8a79f9c4a35943a2a2cb5f97dfe2c, type: 2}
+      successSceneName: 
+      failSceneName: 

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: TakingTheBus
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: uGogo
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
+    dialogueText: My sweet child. I know your legs are sore but the roads are too
+      bad. The busses you've seen are going to a different school
+  - characterName: uGogo
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
+    dialogueText: Many cars cannot make it to the school, they need special 4x4 cars
+      to get there.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Seems there is no choice but to walk to school.
+    choiceA:
+      choiceText: Wake up earlier each day
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: e58eabf218251c54c9ba5780f8689f7b, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Miss days of School to Sleep
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: e58eabf218251c54c9ba5780f8689f7b, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

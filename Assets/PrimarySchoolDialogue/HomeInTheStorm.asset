@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: HomeInTheStorm
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: uGogo
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
+    dialogueText: Don't you dare think about walking to school in this weather.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: No Gogo. I am happy to stay home today.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: Sipho is more than happy to stay home but he misses  work. Sipho
+      may struggle to catch up.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: When the weather calms down, Sipho heads back to school with uGogo
+      watching him all until he disappears from her vision.
+  - characterName: Sipho
+    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    dialogueText: Eww The toilets are all flooded and nasty. Gross.
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: 'Despite the state of the Pit toilets, Sipho still needs to use
+      the bathroom. '
+  - characterName: Narrator
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
+    dialogueText: He becomes ill for several days.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Final Exams are approaching and Sipho is becoming nervous.
+      He's missed alot of School.
+    choiceA:
+      choiceText: Take extra paper for all of his Notes
+      successProbability: 1
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Stay longer at School
+      successProbability: 1
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
