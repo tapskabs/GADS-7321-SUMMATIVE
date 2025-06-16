@@ -5,74 +5,125 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Assign in Inspector")]
-    public DialogueLine startingDialogue;  // Drag your first SO here
-    public Image portraitImage;            // You can use RawImage too if preferred
+    [Header("Dialogue UI")]
+    public DialogueSequence startingSequence;
+    public Image portraitImage;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Button nextButton;
 
-    private DialogueLine currentLine;
+    [Header("Choice Panel UI")]
+    public GameObject choicePanel;
+    public TMP_Text eventDescriptionText;
+    public Button choiceAButton;
+    public TMP_Text choiceAText;
+    public Button choiceBButton;
+    public TMP_Text choiceBText;
+
+    private DialogueSequence currentSequence;
+    private int entryIndex;
 
     private void Start()
     {
-        if (startingDialogue != null)
-        {
-            StartDialogue(startingDialogue);
-        }
+        if (startingSequence != null)
+            StartSequence(startingSequence);
 
         nextButton.onClick.AddListener(HandleNext);
     }
 
-    public void StartDialogue(DialogueLine dialogue)
+    public void StartSequence(DialogueSequence sequence)
     {
-        currentLine = dialogue;
+        currentSequence = sequence;
+        entryIndex = 0;
+        choicePanel.SetActive(false);
+        DisplayCurrentEntry();
+    }
 
-        nameText.text = dialogue.characterName;
-        dialogueText.text = dialogue.dialogueText;
-
-        if (portraitImage != null && dialogue.characterPortrait != null)
+    void DisplayCurrentEntry()
+    {
+        if (entryIndex < currentSequence.dialogueEntries.Length)
         {
-            portraitImage.sprite = dialogue.characterPortrait;
+            var entry = currentSequence.dialogueEntries[entryIndex];
+            nameText.text = entry.characterName;
+            dialogueText.text = entry.dialogueText;
+
+            if (portraitImage != null && entry.characterPortrait != null)
+                portraitImage.sprite = entry.characterPortrait;
         }
     }
 
-    private void HandleNext()
+    void HandleNext()
     {
-        if (currentLine == null) return;
+        if (entryIndex < currentSequence.dialogueEntries.Length - 1)
+        {
+            entryIndex++;
+            DisplayCurrentEntry();
+        }
+        else if (currentSequence.showChoicePanelAtEnd && currentSequence.choicePanel != null)
+        {
+            ShowChoicePanel(currentSequence.choicePanel);
+        }
+        else
+        {
+            // No choice panel, end here
+            dialogueText.text += "\n\n[End of Dialogue]";
+            nextButton.interactable = false;
+        }
+    }
+
+    void ShowChoicePanel(ChoicePanelData panelData)
+    {
+        nextButton.interactable = false;
+        choicePanel.SetActive(true);
+
+        eventDescriptionText.text = panelData.eventDescription;
+
+        choiceAText.text = panelData.choiceA.choiceText;
+        choiceAButton.onClick.RemoveAllListeners();
+        choiceAButton.onClick.AddListener(() => HandleChoice(panelData.choiceA));
+
+        choiceBText.text = panelData.choiceB.choiceText;
+        choiceBButton.onClick.RemoveAllListeners();
+        choiceBButton.onClick.AddListener(() => HandleChoice(panelData.choiceB));
+    }
+
+    void HandleChoice(DialogueChoice choice)
+    {
+        choicePanel.SetActive(false);
+        nextButton.interactable = true;
 
         float roll = Random.value;
-        bool isSuccess = roll <= currentLine.successProbability;
+        bool success = roll <= choice.successProbability;
 
-        if (isSuccess)
+        if (success)
         {
-            if (!string.IsNullOrEmpty(currentLine.successSceneName))
+            if (choice.successSequence != null)
             {
-                SceneManager.LoadScene(currentLine.successSceneName);
+                StartSequence(choice.successSequence);
                 return;
             }
-            else if (currentLine.successNextLine != null)
+            else if (!string.IsNullOrEmpty(choice.successSceneName))
             {
-                StartDialogue(currentLine.successNextLine);
+                SceneManager.LoadScene(choice.successSceneName);
                 return;
             }
         }
         else
         {
-            if (!string.IsNullOrEmpty(currentLine.failSceneName))
+            if (choice.failSequence != null)
             {
-                SceneManager.LoadScene(currentLine.failSceneName);
+                StartSequence(choice.failSequence);
                 return;
             }
-            else if (currentLine.failNextLine != null)
+            else if (!string.IsNullOrEmpty(choice.failSceneName))
             {
-                StartDialogue(currentLine.failNextLine);
+                SceneManager.LoadScene(choice.failSceneName);
                 return;
             }
         }
 
-        // If no outcome, just disable button or do nothing
+        dialogueText.text = "No outcome defined. Dialogue ends here.";
         nextButton.interactable = false;
-        dialogueText.text += "\n\n[End of Dialogue]";
     }
+
 }

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: New Dialogue Sequence
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Bell
+    characterPortrait: {fileID: 21300000, guid: f004d321f2825c44d929e3d0f5844b8c, type: 3}
+    dialogueText: Hey You are trapped
+  - characterName: ME
+    characterPortrait: {fileID: 21300000, guid: 2e43f0691f0d7404eae8d01381da65a0, type: 3}
+    dialogueText: Nooooo
+  - characterName: Bell
+    characterPortrait: {fileID: 21300000, guid: f004d321f2825c44d929e3d0f5844b8c, type: 3}
+    dialogueText: stay there whilst i get my torture device
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: YOU ARE TRAPPED
+    choiceA:
+      choiceText: YOU Try bite the rop
+      successProbability: 0.05
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: SuccessScene
+      failSceneName: FailScene
+    choiceB:
+      choiceText: You try play dead
+      successProbability: 0.246
+      successSequence: {fileID: 11400000}
+      failSequence: {fileID: 11400000, guid: f954ceac789545a458f1d049b4647943, type: 2}
+      successSceneName: 
+      failSceneName: 
