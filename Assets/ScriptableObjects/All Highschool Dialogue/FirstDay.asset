@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: FirstDay
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho walks to school alone, nervous about his new environment.
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: I hope Gogo packed my timetable.
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "It\u2019s Sipho\u2019s first day of high school. The morning sun
+      feels heavy, the road to school even longer than before"
+  - characterName: Prefect
+    characterPortrait: {fileID: 0}
+    dialogueText: Grade 8s line up! Fast!
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "Why do they always talk like they\u2019re angry?"
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "Now we enter Class. Sipho\u2019s classroom with 65 students, some
+      in different grades, some standing, some loud, one teacher."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "It\u2019s the first period of the day. Sipho arrives at school,
+      but his teacher is missing \u2014 again. The class becomes restless."
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "She\u2019s not here again?"
+  - characterName: Classmate
+    characterPortrait: {fileID: 0}
+    dialogueText: Nope. Heard she went to a workshop in town.
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Third time this month
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Overwhelmed by the shouting, Sipho keeps quiet. Another boy tosses
+      a paper ball across the room.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: "\u201CThe classroom is in chaos. What should Sipho do?\u201D"
+    choiceA:
+      choiceText: Try to help the teacher restore order
+      successProbability: 0.607
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Stay silent and observe
+      successProbability: 0.906
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 
