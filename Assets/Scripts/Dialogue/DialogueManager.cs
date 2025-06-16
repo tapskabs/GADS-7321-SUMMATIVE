@@ -90,37 +90,40 @@ public class DialogueManager : MonoBehaviour
     void HandleChoice(DialogueChoice choice)
     {
         choicePanel.SetActive(false);
+        nextButton.interactable = true;
 
         float roll = Random.value;
         bool success = roll <= choice.successProbability;
 
         if (success)
         {
-            if (!string.IsNullOrEmpty(choice.successSceneName))
-            {
-                SceneManager.LoadScene(choice.successSceneName);
-                return;
-            }
-            else if (choice.successSequence != null)
+            if (choice.successSequence != null)
             {
                 StartSequence(choice.successSequence);
+                return;
+            }
+            else if (!string.IsNullOrEmpty(choice.successSceneName))
+            {
+                SceneManager.LoadScene(choice.successSceneName);
                 return;
             }
         }
         else
         {
-            if (!string.IsNullOrEmpty(choice.failSceneName))
-            {
-                SceneManager.LoadScene(choice.failSceneName);
-                return;
-            }
-            else if (choice.failSequence != null)
+            if (choice.failSequence != null)
             {
                 StartSequence(choice.failSequence);
+                return;
+            }
+            else if (!string.IsNullOrEmpty(choice.failSceneName))
+            {
+                SceneManager.LoadScene(choice.failSceneName);
                 return;
             }
         }
 
         dialogueText.text = "No outcome defined. Dialogue ends here.";
+        nextButton.interactable = false;
     }
+
 }
