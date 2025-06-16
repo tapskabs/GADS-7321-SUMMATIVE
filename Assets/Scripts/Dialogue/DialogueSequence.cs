@@ -5,12 +5,8 @@ public class DialogueSequence : ScriptableObject
 {
     public DialogueEntry[] dialogueEntries;
 
-    [Header("Probabilistic Choice")]
-    [Range(0f, 1f)] public float successProbability = 1f;
-    public DialogueSequence successSequence;
-    public DialogueSequence failSequence;
-    public string successSceneName;
-    public string failSceneName;
+    public bool showChoicePanelAtEnd;
+    public ChoicePanelData choicePanel;
 }
 
 [System.Serializable]
@@ -20,3 +16,13 @@ public class DialogueEntry
     public Sprite characterPortrait;
     [TextArea] public string dialogueText;
 }
+
+[System.Serializable]
+public class ChoicePanelData
+{
+    [TextArea] public string eventDescription;
+    public DialogueChoice choiceA;
+    public DialogueChoice choiceB;
+}
+
+

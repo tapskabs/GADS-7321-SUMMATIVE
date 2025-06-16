@@ -5,30 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Inspector References")]
+    [Header("Dialogue UI")]
     public DialogueSequence startingSequence;
     public Image portraitImage;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Button nextButton;
 
+    [Header("Choice Panel UI")]
+    public GameObject choicePanel;
+    public TMP_Text eventDescriptionText;
+    public Button choiceAButton;
+    public TMP_Text choiceAText;
+    public Button choiceBButton;
+    public TMP_Text choiceBText;
+
     private DialogueSequence currentSequence;
     private int entryIndex;
 
-    void Start()
+    private void Start()
     {
         if (startingSequence != null)
-        {
             StartSequence(startingSequence);
-        }
 
         nextButton.onClick.AddListener(HandleNext);
     }
 
-    void StartSequence(DialogueSequence sequence)
+    public void StartSequence(DialogueSequence sequence)
     {
         currentSequence = sequence;
         entryIndex = 0;
+        choicePanel.SetActive(false);
         DisplayCurrentEntry();
     }
 
@@ -41,9 +48,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = entry.dialogueText;
 
             if (portraitImage != null && entry.characterPortrait != null)
-            {
                 portraitImage.sprite = entry.characterPortrait;
-            }
         }
     }
 
@@ -54,42 +59,68 @@ public class DialogueManager : MonoBehaviour
             entryIndex++;
             DisplayCurrentEntry();
         }
+        else if (currentSequence.showChoicePanelAtEnd && currentSequence.choicePanel != null)
+        {
+            ShowChoicePanel(currentSequence.choicePanel);
+        }
         else
         {
-            // Dialogue finished, now handle probabilistic branching
-            float roll = Random.value;
-            bool success = roll <= currentSequence.successProbability;
-
-            if (success)
-            {
-                if (!string.IsNullOrEmpty(currentSequence.successSceneName))
-                {
-                    SceneManager.LoadScene(currentSequence.successSceneName);
-                    return;
-                }
-                else if (currentSequence.successSequence != null)
-                {
-                    StartSequence(currentSequence.successSequence);
-                    return;
-                }
-            }
-            else
-            {
-                if (!string.IsNullOrEmpty(currentSequence.failSceneName))
-                {
-                    SceneManager.LoadScene(currentSequence.failSceneName);
-                    return;
-                }
-                else if (currentSequence.failSequence != null)
-                {
-                    StartSequence(currentSequence.failSequence);
-                    return;
-                }
-            }
-
-            // If no outcome defined
+            // No choice panel, end here
             dialogueText.text += "\n\n[End of Dialogue]";
             nextButton.interactable = false;
         }
+    }
+
+    void ShowChoicePanel(ChoicePanelData panelData)
+    {
+        nextButton.interactable = false;
+        choicePanel.SetActive(true);
+
+        eventDescriptionText.text = panelData.eventDescription;
+
+        choiceAText.text = panelData.choiceA.choiceText;
+        choiceAButton.onClick.RemoveAllListeners();
+        choiceAButton.onClick.AddListener(() => HandleChoice(panelData.choiceA));
+
+        choiceBText.text = panelData.choiceB.choiceText;
+        choiceBButton.onClick.RemoveAllListeners();
+        choiceBButton.onClick.AddListener(() => HandleChoice(panelData.choiceB));
+    }
+
+    void HandleChoice(DialogueChoice choice)
+    {
+        choicePanel.SetActive(false);
+
+        float roll = Random.value;
+        bool success = roll <= choice.successProbability;
+
+        if (success)
+        {
+            if (!string.IsNullOrEmpty(choice.successSceneName))
+            {
+                SceneManager.LoadScene(choice.successSceneName);
+                return;
+            }
+            else if (choice.successSequence != null)
+            {
+                StartSequence(choice.successSequence);
+                return;
+            }
+        }
+        else
+        {
+            if (!string.IsNullOrEmpty(choice.failSceneName))
+            {
+                SceneManager.LoadScene(choice.failSceneName);
+                return;
+            }
+            else if (choice.failSequence != null)
+            {
+                StartSequence(choice.failSequence);
+                return;
+            }
+        }
+
+        dialogueText.text = "No outcome defined. Dialogue ends here.";
     }
 }
