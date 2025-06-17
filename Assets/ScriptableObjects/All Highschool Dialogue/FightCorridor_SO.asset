@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: FightCorridor_SO
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: The bell rings. Sipho steps into the corridor, head low.
+  - characterName: Banele (Classmate)
+    characterPortrait: {fileID: 0}
+    dialogueText: Give me my money!
+  - characterName: Jabu (Classmate)
+    characterPortrait: {fileID: 0}
+    dialogueText: I said I will pay you next WEEK!
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Shouting echoes. A shove and then a Punch.
+  - characterName: Mr Maseko (Teacher)
+    characterPortrait: {fileID: 0}
+    dialogueText: Hey! Stop That Boys!
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho watches. Everyone Watches. No one steps in.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Will you try and stop the fight?
+    choiceA:
+      choiceText: Step in and try calm them down
+      successProbability: 0.2
+      successSequence: {fileID: 11400000, guid: 85a2fb8279918b74f9559df6efaa75e9, type: 2}
+      failSequence: {fileID: 11400000, guid: ee6af87858f190b40b8beae08aaeeb93, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Walk away silently
+      successProbability: 0.784
+      successSequence: {fileID: 11400000, guid: c581508004b881d4aa0a053f8e597ed8, type: 2}
+      failSequence: {fileID: 0}
+      successSceneName: 
+      failSceneName: 

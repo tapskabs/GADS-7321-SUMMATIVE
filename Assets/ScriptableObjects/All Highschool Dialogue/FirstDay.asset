@@ -40,30 +40,38 @@ MonoBehaviour:
   - characterName: Sipho
     characterPortrait: {fileID: 0}
     dialogueText: "She\u2019s not here again?"
-  - characterName: Classmate
+  - characterName: Classmate(Zinhle)
     characterPortrait: {fileID: 0}
     dialogueText: Nope. Heard she went to a workshop in town.
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: 'Sixth time this month! We are barely learning. '
   - characterName: Narrator
     characterPortrait: {fileID: 0}
-    dialogueText: Third time this month
+    dialogueText: The class grows louder. Desks screech, chairs shuffle. No supervision.
+  - characterName: Classmate(Zinhle)
+    characterPortrait: {fileID: 0}
+    dialogueText: "If we\u2019re not being taught, what\u2019s the point?"
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: It feels like we are always wasting our time.
   - characterName: Narrator
     characterPortrait: {fileID: 0}
-    dialogueText: Overwhelmed by the shouting, Sipho keeps quiet. Another boy tosses
-      a paper ball across the room.
+    dialogueText: Sipho looks at his schoolbook. The pages still mostly blank.
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: "\u201CThe classroom is in chaos. What should Sipho do?\u201D"
+    eventDescription: What Should Sipho Do?
     choiceA:
-      choiceText: Try to help the teacher restore order
-      successProbability: 0.607
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: Try to lead the class in revision
+      successProbability: 0.3
+      successSequence: {fileID: 11400000, guid: e55f3d89037bab541ad9f94dc86e19ec, type: 2}
+      failSequence: {fileID: 11400000, guid: 8a0c3b83788beb24f97ad0f0b5d3cf1c, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: Stay silent and observe
-      successProbability: 0.906
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: Put his head down and rest
+      successProbability: 0.833
+      successSequence: {fileID: 11400000, guid: bbc32045d525a224cb942a813bab27dc, type: 2}
+      failSequence: {fileID: 11400000, guid: bbc32045d525a224cb942a813bab27dc, type: 2}
       successSceneName: 
       failSceneName: 

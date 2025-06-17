@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7319cdff311a1ab4c8293e70f0e085a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingSequence: {fileID: 11400000, guid: d95e0b287fb22684d81bfaed1696304b, type: 2}
+  startingSequence: {fileID: 11400000, guid: 323b0bd9c44300543ab81ae67eb394a9, type: 2}
   portraitImage: {fileID: 2094604717}
   nameText: {fileID: 1937758186}
   dialogueText: {fileID: 1176398578}

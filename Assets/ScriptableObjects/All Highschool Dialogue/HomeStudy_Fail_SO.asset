@@ -12,21 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
   m_Name: HomeStudy_Fail_SO
   m_EditorClassIdentifier: 
-  dialogueEntries: []
-  showChoicePanelAtEnd: 0
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "Sipho suggests they take turns studying at each other\u2019s homes"
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: ' Zinhle hesitates.'
+  - characterName: Zinhle
+    characterPortrait: {fileID: 0}
+    dialogueText: "My gran won\u2019t allow visitors. And it\u2019s dangerous walking
+      late."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: The group slowley breaks apart
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: The class has now disbanded.
     choiceA:
-      choiceText: 
+      choiceText: Leave
       successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
+      choiceText: Leave
       successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
       successSceneName: 
       failSceneName: 

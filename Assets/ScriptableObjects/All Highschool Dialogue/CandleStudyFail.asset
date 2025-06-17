@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: BondingGroup_SO
+  m_Name: CandleStudyFail
   m_EditorClassIdentifier: 
   dialogueEntries: []
-  showChoicePanelAtEnd: 0
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: A Candle fell and lit a mini fire but was able to be stopped.
+      The principal has kicked you out.
     choiceA:
-      choiceText: 
+      choiceText: Go Home
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
+      choiceText: GoHome
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
-      failSceneName: 
+      successSceneName: HomeScene
+      failSceneName: HomeScene

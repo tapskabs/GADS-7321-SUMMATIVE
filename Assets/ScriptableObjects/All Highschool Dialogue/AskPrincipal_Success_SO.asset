@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: AskPrincipal_Success_SO
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho approaches the Principal
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: Hello SIr, Do you have any spare maths textbooks for us?
+  - characterName: Principal
+    characterPortrait: {fileID: 0}
+    dialogueText: "We have three spare copies. That\u2019s all."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: " It\u2019s not enough  but it\u2019s something. The group divides
+      the books and rotates them."
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: You now have the text books.
+    choiceA:
+      choiceText: GO BACK
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 7eb6cc2e09a9f534688ee418c7148a32, type: 2}
+      failSequence: {fileID: 11400000, guid: 7eb6cc2e09a9f534688ee418c7148a32, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: GO BACK
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 7eb6cc2e09a9f534688ee418c7148a32, type: 2}
+      failSequence: {fileID: 11400000, guid: 7eb6cc2e09a9f534688ee418c7148a32, type: 2}
+      successSceneName: 
+      failSceneName: 

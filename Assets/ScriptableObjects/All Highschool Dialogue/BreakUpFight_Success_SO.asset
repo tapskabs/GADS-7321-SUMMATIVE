@@ -10,37 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: RestHeadFail
+  m_Name: BreakUpFight_Success_SO
   m_EditorClassIdentifier: 
   dialogueEntries:
+  - characterName: 'Sipho '
+    characterPortrait: {fileID: 0}
+    dialogueText: "Guys, not like this. We\u2019re already struggling. Don\u2019t
+      make it worse"
   - characterName: Narrator
     characterPortrait: {fileID: 0}
-    dialogueText: Sipho folds his arms and rests his head.
-  - characterName: Teacher (Ms Dlamini)
-    characterPortrait: {fileID: 0}
-    dialogueText: UNBELIEVABLE. I LEAVE YOU FOR ONE DAY!!
-  - characterName: Narrator
-    characterPortrait: {fileID: 0}
-    dialogueText: Sipho wakes up with a fright
-  - characterName: Sipho
-    characterPortrait: {fileID: 0}
-    dialogueText: But you have been missing so days as of late. I did not expect
-      you to come.
-  - characterName: Narrative
-    characterPortrait: {fileID: 0}
-    dialogueText: How dare you speak back. Take you books and go HOME!!
+    dialogueText: They hesitate. Mr Maseko grabs one by the collar.
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: You are told to leave.
+    eventDescription: Well Done you broke up the fight. Now you May go home
     choiceA:
-      choiceText: Leave
+      choiceText: Home
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
       successSceneName: HomeScene
       failSceneName: HomeScene
     choiceB:
-      choiceText: Leave
+      choiceText: Home
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}

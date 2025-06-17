@@ -10,39 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: RestHeadFail
+  m_Name: Clinic_Success
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
     characterPortrait: {fileID: 0}
-    dialogueText: Sipho folds his arms and rests his head.
-  - characterName: Teacher (Ms Dlamini)
+    dialogueText: "He gets her there by noon. She\u2019s weak \u2014 but okay."
+  - characterName: Nurse
     characterPortrait: {fileID: 0}
-    dialogueText: UNBELIEVABLE. I LEAVE YOU FOR ONE DAY!!
-  - characterName: Narrator
+    dialogueText: "She must rest more. And eat. But I know that\u2019s hard\u2026"
+  - characterName: Gogo
     characterPortrait: {fileID: 0}
-    dialogueText: Sipho wakes up with a fright
+    dialogueText: I cannot afford to rest as I have to make sure my granddaughter
+      makes it through school.
   - characterName: Sipho
     characterPortrait: {fileID: 0}
-    dialogueText: But you have been missing so days as of late. I did not expect
-      you to come.
-  - characterName: Narrative
-    characterPortrait: {fileID: 0}
-    dialogueText: How dare you speak back. Take you books and go HOME!!
+    dialogueText: Do not worry Gogo, you have taught me everything I need to know
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: You are told to leave.
+    eventDescription: You managed to save your grandmother but due to her needed
+      recovery you failed highschool.
     choiceA:
-      choiceText: Leave
+      choiceText: Restart
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: HomeScene
-      failSceneName: HomeScene
+      successSceneName: HighschoolScene
+      failSceneName: HighschoolScene
     choiceB:
-      choiceText: Leave
+      choiceText: Exit
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: HomeScene
-      failSceneName: HomeScene
+      successSceneName: MainMenu
+      failSceneName: MainMenu

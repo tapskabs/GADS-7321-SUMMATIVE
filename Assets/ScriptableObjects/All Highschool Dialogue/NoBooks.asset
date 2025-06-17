@@ -12,21 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
   m_Name: NoBooks
   m_EditorClassIdentifier: 
-  dialogueEntries: []
-  showChoicePanelAtEnd: 0
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "The group sits together. Zinhle opens her book...  It\u2019s worn
+      and torn."
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "Let\u2019s go over quadratic equations."
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "Let\u2019s go over quadratic equations."
+  - characterName: Lungile
+    characterPortrait: {fileID: 0}
+    dialogueText: WAIT... I did not get my maths textbook this term
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "Sipho flips his copy around, trying to share. It\u2019s hard to
+      read upside down and with so many people sharing such few textbooks."
+  - characterName: Zinhle
+    characterPortrait: {fileID: 0}
+    dialogueText: How are we supposed to pass like this?
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "We\u2019ll figure something out."
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: What should Sipho suggest?
     choiceA:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: Ask the principal for more books
+      successProbability: 0.4
+      successSequence: {fileID: 11400000, guid: f235477b6d69c8b419861c081170a3e9, type: 2}
+      failSequence: {fileID: 11400000, guid: 78b4326c919aba44b8b9c87164820998, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: "Suggest they take turns studying at each other\u2019s homes "
+      successProbability: 0.3
+      successSequence: {fileID: 11400000, guid: cedc6ea3f702f6d418e2409b191878ae, type: 2}
+      failSequence: {fileID: 11400000, guid: 6509d950711f46f458eba37683758fac, type: 2}
       successSceneName: 
       failSceneName: 

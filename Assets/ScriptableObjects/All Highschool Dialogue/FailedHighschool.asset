@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: GroupFallsApart_SO
+  m_Name: FailedHighschool
   m_EditorClassIdentifier: 
   dialogueEntries: []
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: Due to limited resources. Sipho was unable to pass Highshcool.
     choiceA:
-      choiceText: 
+      choiceText: RESTART
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
-      failSceneName: 
+      successSceneName: HighschoolScene
+      failSceneName: HighschoolScene
     choiceB:
-      choiceText: 
+      choiceText: EXIT
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
-      failSceneName: 
+      successSceneName: MainMenu
+      failSceneName: MainMenu

@@ -10,37 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: RestHeadFail
+  m_Name: PowerSuccess_SO
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - characterName: Narrator
-    characterPortrait: {fileID: 0}
-    dialogueText: Sipho folds his arms and rests his head.
-  - characterName: Teacher (Ms Dlamini)
-    characterPortrait: {fileID: 0}
-    dialogueText: UNBELIEVABLE. I LEAVE YOU FOR ONE DAY!!
-  - characterName: Narrator
-    characterPortrait: {fileID: 0}
-    dialogueText: Sipho wakes up with a fright
   - characterName: Sipho
     characterPortrait: {fileID: 0}
-    dialogueText: But you have been missing so days as of late. I did not expect
-      you to come.
-  - characterName: Narrative
+    dialogueText: Hello Sir, may you find a way to turn the lights back on?
+  - characterName: Principal
     characterPortrait: {fileID: 0}
-    dialogueText: How dare you speak back. Take you books and go HOME!!
+    dialogueText: " Fine. I\u2019ll see what I can do."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: ' The next day, lights flicker on.'
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: You are told to leave.
+    eventDescription: Now that the Lights work you are able to study again
     choiceA:
-      choiceText: Leave
+      choiceText: Study
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: HomeScene
-      failSceneName: HomeScene
+      successSceneName: 
+      failSceneName: 
     choiceB:
-      choiceText: Leave
+      choiceText: Go home
       successProbability: 0
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}

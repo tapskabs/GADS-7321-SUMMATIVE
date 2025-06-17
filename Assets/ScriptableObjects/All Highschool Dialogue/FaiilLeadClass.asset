@@ -12,21 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
   m_Name: FaiilLeadClass
   m_EditorClassIdentifier: 
-  dialogueEntries: []
-  showChoicePanelAtEnd: 0
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho raises his voice.
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "Guys, let\u2019s at least try go through some notes?"
+  - characterName: Classmate (Thando)
+    characterPortrait: {fileID: 0}
+    dialogueText: You trying to be teacher now?
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Laughter erupts. Sipho sits back down, embarresed.
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: You decide to withdraw and leave class
     choiceA:
-      choiceText: 
+      choiceText: Leave
       successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
+      choiceText: Leave
       successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
       successSceneName: 
       failSceneName: 

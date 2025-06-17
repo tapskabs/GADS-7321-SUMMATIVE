@@ -10,30 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
-  m_Name: HomeStudy_Success_SO
+  m_Name: WalkAway
   m_EditorClassIdentifier: 
-  dialogueEntries:
-  - characterName: Narrator
-    characterPortrait: {fileID: 0}
-    dialogueText: "Sipho suggests they take turns studying at each other\u2019s homes"
-  - characterName: Narrator
-    characterPortrait: {fileID: 0}
-    dialogueText: Sipho hosts first. They gather in his small lounge.
-  - characterName: Zinhle
-    characterPortrait: {fileID: 0}
-    dialogueText: "It\u2019s cramped, but it\u2019s better than nothing."
+  dialogueEntries: []
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: END THE DAY
+    eventDescription: ' Sipho disappears down the hall. He hears shouting behind
+      him.'
     choiceA:
-      choiceText: END THE DAY
+      choiceText: Go Home
       successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
       successSceneName: HomeScene
       failSceneName: HomeScene
     choiceB:
-      choiceText: END THE DAY
+      choiceText: Go Home
       successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
