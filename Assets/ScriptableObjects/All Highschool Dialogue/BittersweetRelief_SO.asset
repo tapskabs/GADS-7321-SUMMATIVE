@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: BittersweetRelief_SO
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: He finishes class. Rushes home.
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: Gogo are you Okay?! I was worried about you the whole day!
+  - characterName: Gogo
+    characterPortrait: {fileID: 0}
+    dialogueText: "I\u2019m better now, mntwan\u2019am. Thank you for being strong."
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: 
+    choiceA:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 4734a0c6cac973b408f5dd1e291c377d, type: 2}
+      failSequence: {fileID: 11400000, guid: 4734a0c6cac973b408f5dd1e291c377d, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: 
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 4734a0c6cac973b408f5dd1e291c377d, type: 2}
+      failSequence: {fileID: 11400000, guid: 4734a0c6cac973b408f5dd1e291c377d, type: 2}
+      successSceneName: 
+      failSceneName: 

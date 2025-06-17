@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: PowerOutage
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: 'The group has been making progress... until they lose the one
+      thing they depend on: power.'
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: The group settles in for another night of study. Sipho lights the
+      candle.
+  - characterName: Lungile
+    characterPortrait: {fileID: 0}
+    dialogueText: "Again? That\u2019s the third time this week."
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: "They say the principal hasn\u2019t topped up the electricity card."
+  - characterName: Zinhle
+    characterPortrait: {fileID: 0}
+    dialogueText: Can we even study like this?
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "he room glows dim. Outside, a generator hums \u2014 from a nearby
+      tavern."
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: What should Sipho do?
+    choiceA:
+      choiceText: Ask Principal for Help
+      successProbability: 0.3
+      successSequence: {fileID: 11400000, guid: f75cc72fb435d9842831158a7738a204, type: 2}
+      failSequence: {fileID: 11400000, guid: 879ad07841cc04f48999de09eb2d8758, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Decide to study with a Candle
+      successProbability: 0.554
+      successSequence: {fileID: 11400000, guid: 1e93f122a7772d749925cdccd3c541cf, type: 2}
+      failSequence: {fileID: 11400000, guid: 69cea4bce94e1b0449c384a3473859bb, type: 2}
+      successSceneName: 
+      failSceneName: 

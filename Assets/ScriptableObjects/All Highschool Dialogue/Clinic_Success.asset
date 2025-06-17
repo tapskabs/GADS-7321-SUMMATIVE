@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: Clinic_Success
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "He gets her there by noon. She\u2019s weak \u2014 but okay."
+  - characterName: Nurse
+    characterPortrait: {fileID: 0}
+    dialogueText: "She must rest more. And eat. But I know that\u2019s hard\u2026"
+  - characterName: Gogo
+    characterPortrait: {fileID: 0}
+    dialogueText: I cannot afford to rest as I have to make sure my granddaughter
+      makes it through school.
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: Do not worry Gogo, you have taught me everything I need to know
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: You managed to save your grandmother but due to her needed
+      recovery you failed highschool.
+    choiceA:
+      choiceText: Restart
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: HighschoolScene
+      failSceneName: HighschoolScene
+    choiceB:
+      choiceText: Exit
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: MainMenu
+      failSceneName: MainMenu

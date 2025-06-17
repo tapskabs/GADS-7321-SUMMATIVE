@@ -12,21 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
   m_Name: New Dialogue Sequence 1
   m_EditorClassIdentifier: 
-  dialogueEntries: []
-  showChoicePanelAtEnd: 0
+  dialogueEntries:
+  - characterName: Yooo br
+    characterPortrait: {fileID: 21300000, guid: dcdc43f7a0ad67b4ab3e3db38233dfae, type: 3}
+    dialogueText: hey
+  - characterName: brrrr
+    characterPortrait: {fileID: 21300000, guid: a689281f545979940b5cedad12ec31a8, type: 3}
+    dialogueText: yoooooddddd
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: TIMER BROOOO
     choiceA:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: YERR
+      successProbability: 0.281
+      successSequence: {fileID: 11400000, guid: 148fb5e2e0ca60243820f981e3810ec2, type: 2}
+      failSequence: {fileID: 11400000, guid: f954ceac789545a458f1d049b4647943, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
-      failSequence: {fileID: 0}
+      choiceText: NAHHHHHH
+      successProbability: 0.4
+      successSequence: {fileID: 11400000, guid: 148fb5e2e0ca60243820f981e3810ec2, type: 2}
+      failSequence: {fileID: 11400000, guid: f954ceac789545a458f1d049b4647943, type: 2}
       successSceneName: 
       failSceneName: 

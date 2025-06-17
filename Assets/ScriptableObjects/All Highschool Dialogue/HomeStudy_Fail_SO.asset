@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: HomeStudy_Fail_SO
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: "Sipho suggests they take turns studying at each other\u2019s homes"
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: ' Zinhle hesitates.'
+  - characterName: Zinhle
+    characterPortrait: {fileID: 0}
+    dialogueText: "My gran won\u2019t allow visitors. And it\u2019s dangerous walking
+      late."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: The group slowley breaks apart
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: The class has now disbanded.
+    choiceA:
+      choiceText: Leave
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      successSceneName: 
+      failSceneName: 
+    choiceB:
+      choiceText: Leave
+      successProbability: 0
+      successSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      failSequence: {fileID: 11400000, guid: 9b8a5e9b0680a564d984410e68d887ac, type: 2}
+      successSceneName: 
+      failSceneName: 

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: RestHeadFail
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho folds his arms and rests his head.
+  - characterName: Teacher (Ms Dlamini)
+    characterPortrait: {fileID: 0}
+    dialogueText: UNBELIEVABLE. I LEAVE YOU FOR ONE DAY!!
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho wakes up with a fright
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: But you have been missing so days as of late. I did not expect
+      you to come.
+  - characterName: Narrative
+    characterPortrait: {fileID: 0}
+    dialogueText: How dare you speak back. Take you books and go HOME!!
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: You are told to leave.
+    choiceA:
+      choiceText: Leave
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: HomeScene
+      failSceneName: HomeScene
+    choiceB:
+      choiceText: Leave
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: HomeScene
+      failSceneName: HomeScene

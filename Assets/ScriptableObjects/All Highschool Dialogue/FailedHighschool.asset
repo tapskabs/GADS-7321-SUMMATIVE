@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: FailedHighschool
+  m_EditorClassIdentifier: 
+  dialogueEntries: []
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: Due to limited resources. Sipho was unable to pass Highshcool.
+    choiceA:
+      choiceText: RESTART
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: HighschoolScene
+      failSceneName: HighschoolScene
+    choiceB:
+      choiceText: EXIT
+      successProbability: 0
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: MainMenu
+      failSceneName: MainMenu

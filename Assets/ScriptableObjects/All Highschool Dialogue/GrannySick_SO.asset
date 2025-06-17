@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830a13f48d38e16498e68b72188d2ac5, type: 3}
+  m_Name: GrannySick_SO
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Sipho steps into the hut. The air is hot, still
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: Gogo?
+  - characterName: Gogo (weakly)
+    characterPortrait: {fileID: 0}
+    dialogueText: "Just tired, mntwan\u2019am. Just tired."
+  - characterName: Narrator
+    characterPortrait: {fileID: 0}
+    dialogueText: Her breathing is shallow. The last time this happened, they walked
+      12km to the clinic.
+  - characterName: Sipho
+    characterPortrait: {fileID: 0}
+    dialogueText: I also have class Gogo I do not know what to do Gogo.
+  showChoicePanelAtEnd: 1
+  choicePanel:
+    eventDescription: What will Sipho do?
+    choiceA:
+      choiceText: Skip school to take her to the clinic
+      successProbability: 0.5
+      successSequence: {fileID: 0}
+      failSequence: {fileID: 0}
+      successSceneName: ClinicScene
+      failSceneName: ClinicScene1
+    choiceB:
+      choiceText: 'Attend school and check on her later '
+      successProbability: 0.2
+      successSequence: {fileID: 11400000, guid: 393f539e02d41e140bd9331590ac6fd3, type: 2}
+      failSequence: {fileID: 11400000, guid: c0b17670026114d4cb258e961b5c17ac, type: 2}
+      successSceneName: 
+      failSceneName: 
