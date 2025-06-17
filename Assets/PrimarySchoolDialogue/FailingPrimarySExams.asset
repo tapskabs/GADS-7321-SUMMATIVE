@@ -28,20 +28,21 @@ MonoBehaviour:
   - characterName: Narrator
     characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: At the end of year. Sipho is outraged. He's failed.
-  showChoicePanelAtEnd: 0
+  showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: Sipho, tried his hardest, he'll have to repeat the year but
+      thats okay. Little Steps
     choiceA:
-      choiceText: 
-      successProbability: 0
+      choiceText: Restart
+      successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
+      successSceneName: PrimarySchoolLifeStage_1
       failSceneName: 
     choiceB:
-      choiceText: 
-      successProbability: 0
+      choiceText: Go back to MainMenu
+      successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
+      successSceneName: MainMenu
       failSceneName: 

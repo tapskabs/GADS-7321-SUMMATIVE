@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HighSchoolPhase_Background._Pixeljxl_0: -4295565058878057397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

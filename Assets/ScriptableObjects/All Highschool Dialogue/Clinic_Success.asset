@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "He gets her there by noon. She\u2019s weak \u2014 but okay."
   - characterName: Nurse
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -117381706063063591, guid: 3c336459a2bc7714694891100afad686, type: 3}
     dialogueText: "She must rest more. And eat. But I know that\u2019s hard\u2026"
   - characterName: Gogo
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
     dialogueText: I cannot afford to rest as I have to make sure my granddaughter
       makes it through school.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: Do not worry Gogo, you have taught me everything I need to know
   showChoicePanelAtEnd: 1
   choicePanel:

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho moves in... and gets pushed to the ground.
-  - characterName: 'Mr Maseko:'
-    characterPortrait: {fileID: 0}
+  - characterName: Principal
+    characterPortrait: {fileID: -3984893643832805677, guid: 3f708ffd19de4f442b1ab2ba5acb75e4, type: 3}
     dialogueText: Everyone to the office!
   showChoicePanelAtEnd: 1
   choicePanel:

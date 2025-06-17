@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: The bell rings. Sipho steps into the corridor, head low.
   - characterName: Banele (Classmate)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -4949512241923836859, guid: f3059ffbc77bc0e4d8e64d7cff84baba, type: 3}
     dialogueText: Give me my money!
-  - characterName: Jabu (Classmate)
-    characterPortrait: {fileID: 0}
+  - characterName: Precious (Classmate)
+    characterPortrait: {fileID: 8178153835778792080, guid: b9fb0517779b0c54ba1f1749456422e8, type: 3}
     dialogueText: I said I will pay you next WEEK!
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Shouting echoes. A shove and then a Punch.
-  - characterName: Mr Maseko (Teacher)
-    characterPortrait: {fileID: 0}
+  - characterName: Principal
+    characterPortrait: {fileID: -3984893643832805677, guid: 3f708ffd19de4f442b1ab2ba5acb75e4, type: 3}
     dialogueText: Hey! Stop That Boys!
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho watches. Everyone Watches. No one steps in.
   showChoicePanelAtEnd: 1
   choicePanel:

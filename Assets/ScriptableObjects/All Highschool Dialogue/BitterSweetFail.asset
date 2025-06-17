@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho returns to school..
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: ...He returns too late and Gogo is not responding.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: GOGO????
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: He calls for help, but no one comes.
   showChoicePanelAtEnd: 1
   choicePanel:

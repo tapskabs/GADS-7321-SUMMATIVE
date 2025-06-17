@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: By the time they arrived the clinic was understaffed and was unable
       to help them.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "Please, she\u2019s very sick\u2026"
   - characterName: Nurse
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -117381706063063591, guid: 3c336459a2bc7714694891100afad686, type: 3}
     dialogueText: Come back tomorrow, child.
   showChoicePanelAtEnd: 1
   choicePanel:

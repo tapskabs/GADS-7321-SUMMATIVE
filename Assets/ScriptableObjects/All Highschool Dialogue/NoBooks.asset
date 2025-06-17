@@ -21,20 +21,20 @@ MonoBehaviour:
     characterPortrait: {fileID: 0}
     dialogueText: "Let\u2019s go over quadratic equations."
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "Let\u2019s go over quadratic equations."
   - characterName: Lungile
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 8178153835778792080, guid: b9fb0517779b0c54ba1f1749456422e8, type: 3}
     dialogueText: WAIT... I did not get my maths textbook this term
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "Sipho flips his copy around, trying to share. It\u2019s hard to
       read upside down and with so many people sharing such few textbooks."
   - characterName: Zinhle
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6412964976553577345, guid: 0cf946ddd0f0ea3428583c0cab40671b, type: 3}
     dialogueText: How are we supposed to pass like this?
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "We\u2019ll figure something out."
   showChoicePanelAtEnd: 1
   choicePanel:

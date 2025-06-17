@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho steps into the hut. The air is hot, still
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: Gogo?
   - characterName: Gogo (weakly)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
     dialogueText: "Just tired, mntwan\u2019am. Just tired."
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Her breathing is shallow. The last time this happened, they walked
       12km to the clinic.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: I also have class Gogo I do not know what to do Gogo.
   showChoicePanelAtEnd: 1
   choicePanel:

@@ -18,20 +18,20 @@ MonoBehaviour:
     dialogueText: 'The group has been making progress... until they lose the one
       thing they depend on: power.'
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: The group settles in for another night of study. Sipho lights the
       candle.
   - characterName: Lungile
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 8178153835778792080, guid: b9fb0517779b0c54ba1f1749456422e8, type: 3}
     dialogueText: "Again? That\u2019s the third time this week."
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "They say the principal hasn\u2019t topped up the electricity card."
   - characterName: Zinhle
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6412964976553577345, guid: 0cf946ddd0f0ea3428583c0cab40671b, type: 3}
     dialogueText: Can we even study like this?
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "he room glows dim. Outside, a generator hums \u2014 from a nearby
       tavern."
   showChoicePanelAtEnd: 1

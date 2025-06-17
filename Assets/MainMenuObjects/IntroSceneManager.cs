@@ -5,6 +5,6 @@ public class IntroSceneManager : MonoBehaviour
 {
     public void BeginGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("PrimarySchoolLifeStage_1");
     }
 }

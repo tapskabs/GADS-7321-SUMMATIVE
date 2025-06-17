@@ -35,18 +35,18 @@ MonoBehaviour:
     dialogueText: Sipho Passes
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: Congragulations! Sipho has moved up to High School!
     choiceA:
-      choiceText: 
-      successProbability: 0
+      choiceText: Main Menu (Progress Does Not Save)
+      successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
-      failSceneName: 
+      successSceneName: MainMenu
+      failSceneName: MainMenu
     choiceB:
-      choiceText: 
-      successProbability: 0
+      choiceText: Go Now
+      successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: 
-      failSceneName: 
+      successSceneName: Highschool Scene
+      failSceneName: Highschool Scene

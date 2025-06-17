@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "Sipho suggests they take turns studying at each other\u2019s homes"
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho hosts first. They gather in his small lounge.
   - characterName: Zinhle
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6412964976553577345, guid: 0cf946ddd0f0ea3428583c0cab40671b, type: 3}
     dialogueText: "It\u2019s cramped, but it\u2019s better than nothing."
   showChoicePanelAtEnd: 1
   choicePanel:

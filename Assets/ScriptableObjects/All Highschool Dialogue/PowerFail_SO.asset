@@ -17,10 +17,10 @@ MonoBehaviour:
     characterPortrait: {fileID: 0}
     dialogueText: Hello Sir, may you find a way to turn the lights back on?
   - characterName: Principal
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -3984893643832805677, guid: 3f708ffd19de4f442b1ab2ba5acb75e4, type: 3}
     dialogueText: You think I have money lying around?
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "Sipho walks away \u2014 empty-handed."
   showChoicePanelAtEnd: 1
   choicePanel:

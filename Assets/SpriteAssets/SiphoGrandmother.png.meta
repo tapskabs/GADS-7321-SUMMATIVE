@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SiphoGrandmother_0: -6782799967868392072
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho raises his voice.
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "Guys, let\u2019s at least try go through some notes?"
   - characterName: Classmate (Thando)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -4949512241923836859, guid: f3059ffbc77bc0e4d8e64d7cff84baba, type: 3}
     dialogueText: You trying to be teacher now?
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Laughter erupts. Sipho sits back down, embarresed.
   showChoicePanelAtEnd: 1
   choicePanel:

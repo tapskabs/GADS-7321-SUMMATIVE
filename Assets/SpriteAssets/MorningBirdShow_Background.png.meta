@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MorningBirdShow_Background_0: -4231866671523626241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

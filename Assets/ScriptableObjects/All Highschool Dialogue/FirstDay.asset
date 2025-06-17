@@ -14,49 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: Sipho walks to school alone, nervous about his new environment.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: I hope Gogo packed my timetable.
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "It\u2019s Sipho\u2019s first day of high school. The morning sun
       feels heavy, the road to school even longer than before"
   - characterName: Prefect
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 8178153835778792080, guid: b9fb0517779b0c54ba1f1749456422e8, type: 3}
     dialogueText: Grade 8s line up! Fast!
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "Why do they always talk like they\u2019re angry?"
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "Now we enter Class. Sipho\u2019s classroom with 65 students, some
       in different grades, some standing, some loud, one teacher."
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: "It\u2019s the first period of the day. Sipho arrives at school,
       but his teacher is missing \u2014 again. The class becomes restless."
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: "She\u2019s not here again?"
   - characterName: Classmate(Zinhle)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6412964976553577345, guid: 0cf946ddd0f0ea3428583c0cab40671b, type: 3}
     dialogueText: Nope. Heard she went to a workshop in town.
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: 'Sixth time this month! We are barely learning. '
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: The class grows louder. Desks screech, chairs shuffle. No supervision.
   - characterName: Classmate(Zinhle)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: -6412964976553577345, guid: 0cf946ddd0f0ea3428583c0cab40671b, type: 3}
     dialogueText: "If we\u2019re not being taught, what\u2019s the point?"
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: It feels like we are always wasting our time.
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho looks at his schoolbook. The pages still mostly blank.
   showChoicePanelAtEnd: 1
   choicePanel:

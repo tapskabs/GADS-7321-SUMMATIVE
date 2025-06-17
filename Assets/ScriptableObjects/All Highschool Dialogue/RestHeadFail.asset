@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho folds his arms and rests his head.
   - characterName: Teacher (Ms Dlamini)
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 6214981712685292329, guid: c9a17a15bdca5ec41b1ba32454929c63, type: 3}
     dialogueText: UNBELIEVABLE. I LEAVE YOU FOR ONE DAY!!
   - characterName: Narrator
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho wakes up with a fright
   - characterName: Sipho
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 5539864856897242775, guid: c5a15f9c2e86833428bb1414409d1c23, type: 3}
     dialogueText: But you have been missing so days as of late. I did not expect
       you to come.
   - characterName: Narrative
-    characterPortrait: {fileID: 0}
+    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: How dare you speak back. Take you books and go HOME!!
   showChoicePanelAtEnd: 1
   choicePanel:
