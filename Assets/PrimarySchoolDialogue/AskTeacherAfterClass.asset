@@ -25,8 +25,11 @@ MonoBehaviour:
     dialogueText: Miss, I really need your help with this question.
   - characterName: Narrator
     characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
-    dialogueText: Sipho raises ihis book to show her his work. She averts her gaze
+    dialogueText: Sipho raises his book to show her his work. She averts her gaze
       and speaks.
+  - characterName: Teacher
+    characterPortrait: {fileID: 6214981712685292329, guid: c9a17a15bdca5ec41b1ba32454929c63, type: 3}
+    dialogueText: I'm sorry Sipho, but I cannot help you right now.
   - characterName: Sipho
     characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
     dialogueText: You can't help me?
@@ -34,11 +37,6 @@ MonoBehaviour:
     characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: No, but it is not her fault. His poor teacher has other classes
       and won't have any free time today. Maybe tomorrow she can help.
-  - characterName: Narrator
-    characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
-    dialogueText: No, but it is not her fault. His poor teacher has other classes
-      and won't have any free time today but reassures him that there are extra classes
-      for him to take.
   showChoicePanelAtEnd: 1
   choicePanel:
     eventDescription: Sipho still needs to get ahead in maths so he considers his

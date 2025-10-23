@@ -33,6 +33,10 @@ MonoBehaviour:
   - characterName: Sipho
     characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
     dialogueText: Miss, you can't do this!
+  - characterName: Teacher
+    characterPortrait: {fileID: 6214981712685292329, guid: c9a17a15bdca5ec41b1ba32454929c63, type: 3}
+    dialogueText: I'm sorry students, but this is required. I have no choice and
+      neither does the school. Now, turn to chapter 1.
   - characterName: Narrator
     characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: The next day, the rain pours down hard. Lightning flashes through
@@ -43,14 +47,14 @@ MonoBehaviour:
     choiceA:
       choiceText: Not on this weather!
       successProbability: 1
-      successSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 70e29ddd24d69b14ebddc67e71f5060f, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 
     choiceB:
       choiceText: Yes, he's already so behind.
       successProbability: 1
-      successSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: 4076b1c779efe414e81f31dd859e6e5e, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 

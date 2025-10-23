@@ -16,6 +16,9 @@ MonoBehaviour:
   - characterName: Sipho
     characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
     dialogueText: So the crocodile always eats the big number?
+  - characterName: Teacher
+    characterPortrait: {fileID: 6214981712685292329, guid: c9a17a15bdca5ec41b1ba32454929c63, type: 3}
+    dialogueText: Yes Sipho! He's greedy and hungry for the biggest number.
   - characterName: Narrator
     characterPortrait: {fileID: 4467772777450167983, guid: f7ce747ee7ebbb74baf98c1a64d44fb8, type: 3}
     dialogueText: Sipho's lessons are going well and with the smaller class he's

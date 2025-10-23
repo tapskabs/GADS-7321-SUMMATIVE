@@ -48,5 +48,5 @@ MonoBehaviour:
       successProbability: 1
       successSequence: {fileID: 0}
       failSequence: {fileID: 0}
-      successSceneName: Highschool Scene
-      failSceneName: Highschool Scene
+      successSceneName: HighschoolScene
+      failSceneName: HighschoolScene

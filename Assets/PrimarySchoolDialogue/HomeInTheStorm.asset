@@ -44,14 +44,14 @@ MonoBehaviour:
     choiceA:
       choiceText: Take extra paper for all of his Notes
       successProbability: 1
-      successSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: d2f5ca6de1f39f24ebc58c146c49b4f0, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 
     choiceB:
       choiceText: Stay longer at School
       successProbability: 1
-      successSequence: {fileID: 0}
+      successSequence: {fileID: 11400000, guid: d2f5ca6de1f39f24ebc58c146c49b4f0, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 

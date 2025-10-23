@@ -22,7 +22,7 @@ MonoBehaviour:
       to school. My feet have been hurting and I'm too tired at school. Can I take
       a taxi?
   - characterName: uGogo
-    characterPortrait: {fileID: -1123325022981243793, guid: 28537d96983113948b0387163f9b4b81, type: 3}
+    characterPortrait: {fileID: -6782799967868392072, guid: 7a46bd0bc698dd84e9c9533eace26fb1, type: 3}
     dialogueText: The taxi is too expensive to go everyday. I'm sorry my child.
   showChoicePanelAtEnd: 1
   choicePanel:

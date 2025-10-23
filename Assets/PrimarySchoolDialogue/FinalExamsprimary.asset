@@ -43,13 +43,13 @@ MonoBehaviour:
       choiceText: Wake up extra early to revise
       successProbability: 0.94
       successSequence: {fileID: 11400000, guid: 5e46434a3c1a879448a4c11910ed090d, type: 2}
-      failSequence: {fileID: 0}
+      failSequence: {fileID: 11400000, guid: 83ecd8743298ced41b4c4318687731b8, type: 2}
       successSceneName: 
       failSceneName: 
     choiceB:
       choiceText: Stay late to Revise
       successProbability: 0.94
       successSequence: {fileID: 11400000, guid: 5e46434a3c1a879448a4c11910ed090d, type: 2}
-      failSequence: {fileID: 0}
+      failSequence: {fileID: 11400000, guid: 83ecd8743298ced41b4c4318687731b8, type: 2}
       successSceneName: 
       failSceneName: 

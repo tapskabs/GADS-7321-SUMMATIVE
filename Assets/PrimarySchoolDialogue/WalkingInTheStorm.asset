@@ -48,18 +48,18 @@ MonoBehaviour:
     dialogueText: He becomes ill for several days
   showChoicePanelAtEnd: 1
   choicePanel:
-    eventDescription: 
+    eventDescription: Final Exams are approaching and Sipho is terrified.
     choiceA:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
+      choiceText: Do extra class work.
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: d2f5ca6de1f39f24ebc58c146c49b4f0, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 
     choiceB:
-      choiceText: 
-      successProbability: 0
-      successSequence: {fileID: 0}
+      choiceText: Study extra hard at Home
+      successProbability: 1
+      successSequence: {fileID: 11400000, guid: d2f5ca6de1f39f24ebc58c146c49b4f0, type: 2}
       failSequence: {fileID: 0}
       successSceneName: 
       failSceneName: 
